@@ -1,2 +1,4 @@
 # aoc-2021-uf
-solutions for advent of code 2021 as practice for swamphacks ix
+Solutions for Advent of Code 2021 as practice for SwampHacks IX. 
+Current progress:
+* Day 1-25: not started
