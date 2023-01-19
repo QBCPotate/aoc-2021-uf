@@ -1,0 +1,8 @@
+num_list = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263]
+count= 0
+
+for i in range(len(num_list) - 1):
+    if num_list[i] < num_list[i + 1]:
+        count += 1
+
+print("There are", count, "measurements larger than the previous measurements")
