@@ -1,8 +1,21 @@
-num_list = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263]
+#open file in read mode
+f = open('puzzleinput.txt' , 'r')
+
+#read the file and assign variable puzzle_input
+puzzle_input = f.read()
+
+#turn it into list
+puzzle_input_list = puzzle_input.split("\n")
+
+#initialize variable count
 count= 0
 
-for i in range(len(num_list) - 1):
-    if num_list[i] < num_list[i + 1]:
+
+#for loop gets the index and compares 2 numbers
+for i in range(len(puzzle_input_list) - 1):
+    if puzzle_input_list[i] < puzzle_input_list[i + 1]:
         count += 1
 
-print("There are", count, "measurements larger than the previous measurements")
+print(count)
+
+f.close()
